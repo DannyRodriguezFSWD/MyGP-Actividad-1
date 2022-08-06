@@ -38,17 +38,22 @@ function renderMovies(movies) {
 
 }
 
+const introText = document.querySelector('#intro-text');
+
 
 const Foo = class A {
     constructor() {}
     bar() {
-      return 'Hello World!';
+      return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat faucibus. Vestibulum vel metus pharetra, cursus quam quis, fermentum diam. In vitae ipsum eget orci faucibus molestie. Integer vel tempor sapien, fringilla placerat mauris. Proin lectus dolor, dignissim non odio non, pharetra rutrum sem. Praesent ac egestas sapien. In tincidunt lacus sed nunc semper interdum. Nulla ullamcorper orci laoreet odio ornare, quis cursus turpis cursus. Morbi condimentum vehicula eleifend. Ut ornare sed dolor eget mattis. Aenean nunc nulla, porttitor nec placerat vitae, vestibulum nec diam. Vivamus cursus tortor sem, quis semper nisi laoreet eu. Vivamus a condimentum tellus, et elementum odio. Nam tincidunt fringilla mauris vitae ultrices. Fusce eu hendrerit quam, ut scelerisque leo.';
     }
   };
   
   const instance = new Foo();
   instance.bar();  // "Hello World!"
-  Foo.name; 
+  Foo.name;
+  
+  introText.textContent = instance.bar();
+  
 
   const FooB = class B {
     constructor() {}
