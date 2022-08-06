@@ -35,4 +35,20 @@ const createMoviesItems = movies => movies.map(movie => `<li><div class="mv-img"
 function renderMovies(movies) {
   const itemString = createMoviesItems(movies)
   moviesList.innerHTML = itemString
+
 }
+
+
+const Foo = class {
+    constructor() {}
+    bar() {
+      return 'Hello World!';
+    }
+  };
+  
+  const instance = new Foo();
+  instance.bar();  // "Hello World!"
+  Foo.name; 
+=======
+}
+
