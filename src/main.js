@@ -59,4 +59,15 @@ const Foo = class A {
 
   const instanceB = new FooB();
   instanceB.bar();  // "Class B!"!"
-  FooB.name; 
+  FooB.name;
+  
+const FooC = class C {
+    constructor() {}
+    barC() {
+      return 'class C!';
+    }
+  };
+  
+  const instanceC = new FooC();
+  instanceC.barC();  // "class C!"
+  FooC.name; 
