@@ -39,7 +39,7 @@ function renderMovies(movies) {
 }
 
 
-const Foo = class {
+const Foo = class A {
     constructor() {}
     bar() {
       return 'Hello World!';
@@ -49,6 +49,25 @@ const Foo = class {
   const instance = new Foo();
   instance.bar();  // "Hello World!"
   Foo.name; 
-=======
-}
 
+  const FooB = class B {
+    constructor() {}
+    bar() {
+      return 'Class B!';
+    }
+  };
+
+  const instanceB = new FooB();
+  instanceB.bar();  // "Class B!"!"
+  FooB.name;
+  
+const FooC = class C {
+    constructor() {}
+    barC() {
+      return 'class C!';
+    }
+  };
+  
+  const instanceC = new FooC();
+  instanceC.barC();  // "class C!"
+  FooC.name; 
